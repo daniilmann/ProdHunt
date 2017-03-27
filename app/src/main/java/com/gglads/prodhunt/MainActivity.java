@@ -209,7 +209,10 @@ public class MainActivity extends AppCompatActivity
                 startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/daniilmann")));
                 break;
             case R.id.nav_send:
-                startActivity(new Intent(Intent.ACTION_SEND, Uri.parse("mailto:daniilmann@gmail.com")));
+                Intent intent = new Intent(Intent.ACTION_SEND);
+                intent.setData(Uri.parse("mailto:daniilmann@gmail.com"));
+                intent.setType("text/plain");
+                startActivity(Intent.createChooser(intent, "Send mail..."));
                 break;
         }
 
