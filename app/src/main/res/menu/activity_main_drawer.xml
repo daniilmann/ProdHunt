@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Settings" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <!--<item-->
+                <!--android:id="@+id/nav_about"-->
+                <!--android:icon="@drawable/account"-->
+                <!--android:title="About" />-->
+            <item
+                android:id="@+id/nav_github"
+                android:icon="@drawable/github_circle"
+                android:title="Github" />
+            <item
+                android:id="@+id/nav_linkedin"
+                android:icon="@drawable/linkedin_box"
+                android:title="LinkedIn" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/gmail"
+                android:title="Email" />
+        </menu>
+    </item>
+
+</menu>
